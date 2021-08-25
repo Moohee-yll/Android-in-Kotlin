@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--这个见面用于显示用户选中的新闻内容，在手机中是单独界面，在平板中是右边的界面-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+<!--    这个LinearLayout设置为不可见，
+因为在双页模式下如果没有选中任何新闻，这个界面是不显示的-->
     <LinearLayout
         android:id="@+id/contentLayout"
         android:layout_width="match_parent"
@@ -17,7 +20,7 @@
             android:gravity="center"
             android:padding="10dp"
             android:textSize="20sp" />
-
+<!--这个View是设置细线分割两个控件-->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
